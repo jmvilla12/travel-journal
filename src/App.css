@@ -1,9 +1,31 @@
+/* ----------------- */
+/* Color preferences */
+/* ----------------- */
+
 :root {
     --color-base: #F55A5A;
     --color-base-contrast: #FFFFFF;
-    --color-text: #2B283A;
-    --color-text-highlight: #918E9B;
-    --color-horizontal-line: #F5F5F5;
+    --color-horizontal-line: #918E9B;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-background: #F5F5F5;
+        --color-text: #2B283A;
+        --color-text-highlight: #918E9B;
+        --color-horizontal-line: #918E9B;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #242229;
+        --color-text: #F5F5F5;
+        --color-text-highlight: #FFFFFF;
+        --color-horizontal-line: #565074;
+    }
 }
 
 * {
@@ -13,11 +35,12 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
 }
 
 .navbar {
     background-color: var(--color-base);
-    /* border-bottom: 1px solid #e9ecef; */
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1)
 }
 
 .nav--logo {
@@ -50,7 +73,13 @@ body {
     width: 8rem;
     height: 11.5rem;
     object-fit: cover;
-    border-radius: 0.313rem;
+    border-radius: 0.5rem;
+}
+
+.card--image:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .card--stats {
@@ -90,13 +119,14 @@ body {
     font-weight: 400;
     line-height: 1.5;
     max-width: 40rem;
+    text-align: justify;
 }
 
 
 /* Dynamic cards divider  */
 .cards-list > .card + .card {
     padding-top: 2rem;
-    border-top: 1px solid var(--color-horizontal-line);
+    border-top: 1.5px solid var(--color-horizontal-line);
 }
 
 .cards-list .card:first-child {
@@ -114,4 +144,21 @@ body {
     padding: 0.25rem;
     background-color: var(--color-base);
     color: var(--color-base-contrast);
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .card--image {
+        height: auto;
+        width: 100%;
+    }
+
+    .card--stats {
+        margin: 1rem 0 0 0;
+        padding: 0;
+    }
 }
