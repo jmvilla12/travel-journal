@@ -1,6 +1,31 @@
-# Getting Started with Create React App
+# Scrimba - Travel Journal solution
+This is a solution to the Travel Journal project on [Scrimba](https://v2.scrimba.com/learn-react-c0e).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of contents
+
+- [Overview](#overview)
+  - [Requirements](#requirements)
+  - [Screenshot](#screenshot)
+  - [Getting Started with Create React App](#getting-started-with-create-react-app)
+- [Available Scripts](#available-scripts)
+- [My process](#my-process)
+  - [Technologies used](#technologies-used)
+  - [What I Learnt](#what-i-learnt)
+- [Author](#author)
+
+## Overview
+
+### Requirements
+
+<ul>
+  <li>Data array in a separate <img src = https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/768px-Unofficial_JavaScript_logo_2.svg.png?20141107110902 height= 15px alt="js-logo"> file </li>
+  <ul>
+    <li>Title, location, Google Maps, link, start date, end date, description, image URL</li>
+  </ul>
+  <li>Use <code>.map()</code> and props</li>
+  <li>Style & polished</li>
+  <li>Responsive</li>
+</ul>
 
 ## Available Scripts
 
