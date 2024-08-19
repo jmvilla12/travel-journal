@@ -6,8 +6,8 @@ This is a solution to the Travel Journal project on [Scrimba](https://v2.scrimba
 - [Overview](#overview)
   - [Requirements](#requirements)
   - [Screenshot](#screenshot)
+  - [Links](#links)
   - [Getting Started with Create React App](#getting-started-with-create-react-app)
-- [Available Scripts](#available-scripts)
 - [My process](#my-process)
   - [Technologies used](#technologies-used)
   - [What I Learnt](#what-i-learnt)
@@ -34,17 +34,12 @@ This is a solution to the Travel Journal project on [Scrimba](https://v2.scrimba
 - Responsive design on a mobile device.
 ![screenshot_mobile](./public/screenshot_mobile.PNG)
 
+### Links
+- Live Site: [@Netlify](https://traveljournal-jmvilla12.netlify.app/)
+- Source Code: [@Github](https://github.com/jmvilla12/travel-journal)
+
 ### Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-If you want to see the complete project with the complete UX/UI experience, you can clone this repository.
-Then in the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## My process
 
