@@ -28,17 +28,82 @@ This is a solution to the Travel Journal project on [Scrimba](https://v2.scrimba
 </ul>
 
 ### Screenshot
-This is a screenshot of how the project looks.
-![screenshot](./public/screenshot_light.PNG)
+- Project view on a desktop device.
+![screenshot](./public/screenshot_desktop.PNG)
+
+- Responsive design on a mobile device.
+![screenshot_mobile](./public/screenshot_mobile.PNG)
+
+### Getting Started with Create React App
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-In the project directory, you can run:
+If you want to see the complete project with the complete UX/UI experience, you can clone this repository.
+Then in the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## My process
+
+### Technologies used
+
+- HTML5
+- CSS
+- React.JS
+- Flexbox
+
+### What I Learnt
+
+- Display a dynamic card divider, it's a better practice to implement it with css instead of js:
+```css
+/* Dynamic cards divider  */
+/* I saw this on internet and modified it to implement it better on my code */
+.cards-list > .card + .card {
+    padding-top: 2rem;
+    border-top: 1.5px solid var(--color-horizontal-line);
+}
+
+.cards-list .card:first-child {
+    padding-top: 0;
+}
+
+.cards-list .card:last-child {
+    padding-bottom: 0;
+}
+```
+
+- Design patterns to implement Dark and Light mode:
+```css
+/* This practice helps me to create better design patterns. */
+
+:root {
+    --color-base: #F55A5A;
+    --color-base-contrast: #FFFFFF;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-background: #F5F5F5;
+        --color-text: #2B283A;
+        --color-text-highlight: #918E9B;
+        --color-horizontal-line: #918E9B;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: #242229;
+        --color-text: #F5F5F5;
+        --color-text-highlight: #FFFFFF;
+        --color-horizontal-line: #565074;
+    }
+}
+```
+
+## Author
+Jose Manuel Villa 
